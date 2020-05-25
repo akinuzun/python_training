@@ -1,7 +1,7 @@
 from selenium import webdriver
 import time
 
-browser = webdriver.Chrome("/home/neovo/Masaüstü/chromedriver")
+browser = webdriver.Chrome("/home/neovo/Genel/chromedriver")
 
 browser.get("https://www.forbes.com/powerful-brands/list/")
 
