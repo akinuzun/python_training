@@ -119,29 +119,34 @@ Switching on camera from habitat with rabbits...
 (" ~----( ~   Y.  )
 It seems there will be more rabbits soon!"""
 
-# write your code here
 animals = [camel, lion, deer, goose, bat, rabbit]
-habitat = int(input("Which habitat # do you need? > "))
-if habitat == 0:
-    print(animals[0])
 
-elif habitat == 1:
-    print(animals[1])
+# write your code here
+while True:
+    selection = input("Which habitat # do you need? > ")
 
-elif habitat == 2:
-    print(animals[2])
+    if selection == "0":
+        print(animals[0])
 
-elif habitat == 3:
-    print(animals[3])
+    elif selection == "1":
+        print(animals[1])
 
-elif habitat == 4:
-    print(animals[4])
+    elif selection == "2":
+        print(animals[2])
 
-elif habitat == 5:
-    print(animals[5])
+    elif selection == "3":
+        print(animals[3])
 
-else:
-    print("Wrong Selection! Try Again")
+    elif selection == "4":
+        print(animals[4])
 
-print("""----
-The end of the program. To check another habitat restart the watcher please.""")
+    elif selection == "5":
+        print(animals[5])
+
+    elif selection == "exit":
+        break
+
+    else:
+        print("Wrong Selection! Try Again!")
+
+print("See you!")
